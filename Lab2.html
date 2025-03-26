@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_Task_1</title>
+</head>
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 15vh;">
+        <img src="11.jpg" alt="image" style="border-radius: 50%; width: 100px; height: 100px;">
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: 5vh; margin-top: -20px;">
+        <h2>cycling</h2>
+    </div>
+
+    <div style="width: 600px; height: 1500px; display: flex; border: 2px solid black;">
+        <!--Left Side Box-->
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center; border-right: 2px solid black; background: hwb(206 41% 15%);">
+            <form style="display: flex; flex-direction: column; align-items: center; width: 100%; margin-top: 30px;">
+
+                <h4>Registration Form <style>:left</style></h4>
+                
+                <label for="fullname" style="align-self: flex-start; margin-left: 10px;">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" style="width: 90%; padding: 5px; margin-bottom: 8px;">
+
+                <label for="email" style="align-self: flex-start; margin-left: 10px;">Email:</label>
+                <input type="email" id="email" name="email" style="width: 90%; padding: 5px; margin-bottom: 8px;">
+
+                <label for="password" style="align-self: flex-start; margin-left: 10px;">Password:</label>
+                <input type="password" id="password" name="password" style="width: 90%; padding: 5px; margin-bottom: 8px;">
+
+                <label for="confirm-password" style="align-self: flex-start; margin-left: 10px;">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" style="width: 90%; padding: 5px; margin-bottom: 10px;">
+
+                <label for="dob" style="align-self: flex-start; margin-left: 10px;">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" style="width: 90%; padding: 5px; margin-bottom: 8px;">
+
+                <label for="country" style="align-self: flex-start; margin-left: 10px;">Country:</label>
+                <select id="country" name="country" style="width: 94%; padding: 5px; margin-bottom: 8px;">
+                    <option value="">Select Country</option>
+                    <option value="usa">Afganisthan</option>
+                    <option value="uk">Bangladesh</option>
+                    <option value="canada">India</option>
+                    <option value="india">Pakisthan</option>
+                    <option value="australia">Other</option>
+                </select>
+
+                <label style="align-self: flex-start; margin-left: 10px;">Gender:</label>
+                <div style="display: flex; width: 90%; margin-bottom: 10px;">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male" style="margin-right: 10px;">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female" style="margin-right: 10px;">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+
+                </div>
+
+                <label for="color" style="align-self: flex-start; margin-left: 10px;">Choose Color:</label>
+                <input type="color" id="color" name="color" style="width: 94%; margin-bottom: 8px;">
+
+
+                <label for="description" style="align-self: flex-start; margin-left: 10px;">Description:</label>
+                <textarea id="description" name="description" rows="4" style="width: 94%; margin-bottom: 8px; padding: 5px;"></textarea>
+
+                <div style="align-self: flex-start; margin-left: 10px;">
+                    <input type="checkbox" id="terms" name="terms">
+                    I agree to the <a href="https://example.com/terms" target="_blank" style="color: blue; text-decoration: underline;">terms and conditions</a>
+                </div>
+
+
+                <br>
+                <button type="submit" style="padding: 5px 10px;text-align: ;">Submit</button>
+
+
+        </div>
+
+        <!-- Right Side Two Box -->
+        <div style="flex: 1; display: flex; flex-direction: column; background-color: bisque;">
+            <div style="flex: 4; display: flex; justify-content: center; align-items: center; border-bottom: 2px solid black;background-color: rgb(128, 61, 119);">
+                Rec
+            </div>
+            <div style="flex: 2; display: flex; justify-content: center; align-items: center;">
+                Rec
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
