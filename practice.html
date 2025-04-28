@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Access Object Class in Web Tech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .output {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-left: 5px solid #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Car Information System</h2>
+
+  <button onclick="showCarInfo()">Show Car Info</button>
+
+  <div class="output" id="carOutput"></div>
+
+  <script>
+    // Define a class in JavaScript
+    class Car {
+      constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+      }
+
+      getDetails() {
+        return `Brand: ${this.brand} <br> Model: ${this.model} <br> Year: ${this.year}`;
+      }
+    }
+
+    // Create an object of the class
+    const myCar = new Car("Toyota", "Corolla", 2022);
+
+    // Function to access the object and show its info in HTML
+    function showCarInfo() {
+      const outputDiv = document.getElementById("carOutput");
+      outputDiv.innerHTML = myCar.getDetails(); // Access class method via object
+    }
+  </script>
+
+</body>
+</html>
