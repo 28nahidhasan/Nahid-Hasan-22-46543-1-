@@ -1,0 +1,26 @@
+.aqi-table {
+    width: 250px;
+    height: 450px;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .aqi-table th,
+  .aqi-table td {
+    border: 1px solid black;
+   
+  }
+  
+  .aqi-table th {
+    background-color: #a44c4c;
+    color: white;
+  }
+  
+  .aqi-table  {
+    background-color: #f2f2f2;
+  }
+  tr
+  {
+    padding: 20px;
+  }
