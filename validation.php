@@ -13,48 +13,112 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Registration Confirmation</title>
+  <title>Review Registration Info</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 30px;
-    }
-    .info {
-      margin-bottom: 20px;
-    }
-    .buttons {
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
       display: flex;
-      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
-    .buttons button {
+
+    .container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .row {
+      display: flex;
+      margin-bottom: 15px;
+    }
+
+    .label {
+      flex: 1;
+      font-weight: bold;
+    }
+
+    .value {
+      flex: 2;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .button-group form {
+      margin: 0 10px;
+    }
+
+    button {
       padding: 10px 20px;
-      cursor: pointer;
       border: none;
       border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
+
     .confirm-btn {
-      background-color: #4CAF50;
+      background-color: #28a745;
       color: white;
     }
+
     .cancel-btn {
-      background-color: #f44336;
+      background-color: #dc3545;
       color: white;
     }
   </style>
 </head>
 <body>
 
-  <h2>Confirm Your Information</h2>
-  <div class="info">
-    <p><strong>Full Name:</strong> <?php echo $fullname; ?></p>
-    <p><strong>Email:</strong> <?php echo $email; ?></p>
-    <p><strong>Date of Birth:</strong> <?php echo $dob; ?></p>
-    <p><strong>Country:</strong> <?php echo $country; ?></p>
-    <p><strong>Gender:</strong> <?php echo $gender; ?></p>
-    <p><strong>Description:</strong> <?php echo nl2br($description); ?></p>
+<div class="container">
+  <h3>Review Your Submitted Information</h3>
+
+  <div class="row">
+    <div class="label">Full Name:</div>
+    <div class="value"><?php echo $fullname; ?></div>
   </div>
 
-  <div class="buttons">
+  <div class="row">
+    <div class="label">Email:</div>
+    <div class="value"><?php echo $email; ?></div>
+  </div>
+
+  <div class="row">
+    <div class="label">Date of Birth:</div>
+    <div class="value"><?php echo $dob; ?></div>
+  </div>
+
+  <div class="row">
+    <div class="label">Country:</div>
+    <div class="value"><?php echo $country; ?></div>
+  </div>
+
+  <div class="row">
+    <div class="label">Gender:</div>
+    <div class="value"><?php echo $gender; ?></div>
+  </div>
+
+  <div class="row">
+    <div class="label">Description:</div>
+    <div class="value"><?php echo nl2br($description); ?></div>
+  </div>
+
+  <div class="button-group">
     <form method="post" action="success.php">
       <input type="hidden" name="fullname" value="<?php echo $fullname; ?>">
       <input type="hidden" name="email" value="<?php echo $email; ?>">
@@ -69,6 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <button type="submit" class="cancel-btn">Cancel</button>
     </form>
   </div>
+</div>
 
 </body>
 </html>
